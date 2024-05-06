@@ -1,0 +1,24 @@
+COSAS A TENER EN CUENTA CUANDO NOS CONECTAMOS POR SSH
+
+- Conexion teniendo usuario y contraseña:
+
+	ssh usuario@IP
+	"aqui nos pedira el password"
+
+- Conexion teniendo usuario y contraseña a un puerto no tipico por ejemplo el 2222
+
+	ssh -p2222 usuario@IP
+	"aqui nos pedira el password"
+		
+- Si no tenemos contraseña pero hemos conseguido el archivo id_rsa
+	Lo primero que debemos hacer es dar permisos adecuados al archivo id_rsa
+	
+		chmod 600 id_rsa
+		
+	Ahora hacemos la conexion 
+	
+		ssh -i id_rsa usuario@IP
+		
+	En este caso no nos pide contraseña ya que nos hemos identificado con el id_rsa
+		
+			
