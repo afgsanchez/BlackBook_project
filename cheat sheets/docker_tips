@@ -1,0 +1,2 @@
+- Eliminar ip docker despues de usar una máquina de dockerlabs.
+	sudo ip link delete docker0

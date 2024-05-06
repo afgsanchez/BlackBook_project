@@ -1,0 +1,15 @@
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+export TERM=xterm
+
+
+SHELL MEJORADA
+
+- Pasos
+1- script /dev/null -c bash
+2- presiona Ctrl+Z para suspender el proceso.
+3- stty raw -echo ; fg 
+4- presiona Enter. Esto reanudará la ejecución del proceso suspendido.
+5- Escribe reset y presiona Enter.
+
+Si dice "unknown terminal type" intentar con "xterm"
+----------------------------------
